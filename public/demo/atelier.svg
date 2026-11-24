@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" width="1600" height="1200" role="img">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0.2" y2="1"><stop offset="0" stop-color="#efe6d6"/><stop offset="1" stop-color="#dccdb6"/></linearGradient>
+<radialGradient id="halo" cx="0.46" cy="0.4" r="0.6"><stop offset="0" stop-color="#faf0df" stop-opacity="0.9"/><stop offset="1" stop-color="#faf0df" stop-opacity="0"/></radialGradient>
+<linearGradient id="obj" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6b4a32"/><stop offset="1" stop-color="#4f3524"/></linearGradient>
+<radialGradient id="vig" cx="0.5" cy="0.5" r="0.78"><stop offset="0.5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#2c1f12" stop-opacity="0.2"/></radialGradient>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="26"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer><feComposite operator="in" in2="SourceGraphic"/></filter>
+</defs>
+<rect width="1600" height="1200" fill="url(#bg)"/><rect width="1600" height="1200" fill="url(#halo)"/>
+<rect x="0" y="930" width="1600" height="270" fill="#c9bda8" opacity="0.35"/>
+<rect x="0" y="930" width="1600" height="3" fill="#8a7c68" opacity="0.25"/>
+
+<ellipse cx="480" cy="960" rx="260" ry="34" fill="#3a2a18" opacity="0.22" filter="url(#soft)"/>
+<rect x="300" y="380" width="360" height="540" rx="16" fill="#24413a"/>
+<rect x="300" y="380" width="48" height="540" rx="16" fill="#1a302b"/>
+<rect x="640" y="410" width="14" height="480" fill="#efe7da" opacity="0.8"/>
+<rect x="452" y="430" width="150" height="88" rx="8" fill="#c9a24a"/>
+<ellipse cx="1010" cy="958" rx="200" ry="30" fill="#3a2a18" opacity="0.18" filter="url(#soft)"/>
+<rect x="880" y="600" width="240" height="350" rx="14" fill="#f1e9db"/>
+<ellipse cx="1000" cy="600" rx="120" ry="30" fill="#e6dccb"/>
+<rect x="996" y="540" width="7" height="62" fill="#3a2a18"/>
+<path d="M1000 540 q-30 -38 0 -76 q30 38 0 76z" fill="#e8a33d"/>
+<ellipse cx="1000" cy="520" rx="110" ry="110" fill="#e8a33d" opacity="0.22" filter="url(#soft)"/>
+<path d="M1320 880 q-40 -250 120 -270 q160 20 120 270 q-8 34 -50 34 h-140 q-42 0 -50 -34z" fill="url(#obj)" opacity="0.9"/>
+<ellipse cx="1380" cy="612" rx="90" ry="22" fill="#d9c8a8" opacity="0.9"/>
+<path d="M120 1010 q240 -330 520 -330" stroke="#c4653a" stroke-width="4" fill="none" opacity="0.45"/>
+
+<rect width="1600" height="1200" filter="url(#grain)" opacity="0.32" fill="#8a7c68"/>
+<rect width="1600" height="1200" fill="url(#vig)"/></svg>

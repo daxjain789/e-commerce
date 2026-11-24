@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" width="1600" height="1200" role="img"><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0.25" y2="1">
+  <stop offset="0" stop-color="#efdfc8"/><stop offset="1" stop-color="#e2cdae"/>
+</linearGradient>
+<radialGradient id="halo" cx="0.5" cy="0.42" r="0.55">
+  <stop offset="0" stop-color="#f9edda" stop-opacity="0.85"/>
+  <stop offset="1" stop-color="#f9edda" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="obj" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#3f4a3f"/><stop offset="1" stop-color="#2c342c"/>
+</linearGradient>
+<linearGradient id="obj2" x1="0" y1="0" x2="0.3" y2="1">
+  <stop offset="0" stop-color="#c4653a"/><stop offset="1" stop-color="#2c342c"/>
+</linearGradient>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+<filter id="soft2" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="34"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+  <feColorMatrix type="saturate" values="0"/>
+  <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
+  <feComposite operator="in" in2="SourceGraphic"/></filter>
+</defs><defs><radialGradient id="vig" cx="0.5" cy="0.5" r="0.75"><stop offset="0.5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#2c1f12" stop-opacity="0.2"/></radialGradient></defs><rect width="1600" height="1200" fill="url(#bg)"/><rect width="1600" height="1200" fill="url(#halo)"/>
+        <circle cx="1080" cy="470" r="300" fill="#c4653a" opacity="0.55"/>
+        <rect x="180" y="330" width="520" height="620" rx="30" fill="url(#obj)"/>
+        <path d="M700 420 h60 a130 130 0 0 1 0 260 h-60" fill="none" stroke="#2c342c" stroke-width="60" stroke-linecap="round"/>
+        <ellipse cx="410" cy="345" rx="260" ry="60" fill="#c4653a" opacity="0.9"/>
+        <ellipse cx="410" cy="355" rx="220" ry="46" fill="#2c342c" opacity="0.85"/>
+        <path d="M880 900 q200 -220 470 -180" stroke="#3f4a3f" stroke-width="3" fill="none" opacity="0.5"/><rect width="1600" height="1200" filter="url(#grain)" opacity="0.32" fill="#8a7c68"/><rect width="1600" height="1200" fill="url(#vig)"/></svg>

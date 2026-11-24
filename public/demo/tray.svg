@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img"><defs><radialGradient id="vig" cx="0.5" cy="0.45" r="0.75">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#2c1f12" stop-opacity="0.18"/>
+    </radialGradient>
+<linearGradient id="bg" x1="0" y1="0" x2="0.25" y2="1">
+  <stop offset="0" stop-color="#eee6d6"/><stop offset="1" stop-color="#dbcdb7"/>
+</linearGradient>
+<radialGradient id="halo" cx="0.5" cy="0.42" r="0.55">
+  <stop offset="0" stop-color="#f8eede" stop-opacity="0.85"/>
+  <stop offset="1" stop-color="#f8eede" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="obj" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#7a5537"/><stop offset="1" stop-color="#5d3f28"/>
+</linearGradient>
+<linearGradient id="obj2" x1="0" y1="0" x2="0.3" y2="1">
+  <stop offset="0" stop-color="#8d6544"/><stop offset="1" stop-color="#5d3f28"/>
+</linearGradient>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+<filter id="soft2" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="34"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+  <feColorMatrix type="saturate" values="0"/>
+  <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
+  <feComposite operator="in" in2="SourceGraphic"/></filter>
+</defs><rect width="1200" height="1500" fill="url(#bg)"/><rect width="1200" height="1500" fill="url(#halo)"/><rect width="1200" height="1500" fill="url(#vig)"/>
+    <ellipse cx="600" cy="1010" rx="360" ry="54" fill="#3a2a18" opacity="0.25" filter="url(#soft)"/>
+    <path d="M250 860 l300 -190 l400 120 l-300 200z" fill="#5d3f28"/>
+    <path d="M250 860 v60 l300 200 v-60z" fill="#7a5537"/>
+    <path d="M850 790 v60 l-300 210 v-60z" fill="#8d6544"/>
+    <path d="M290 846 l270 -170" stroke="#fff" stroke-opacity="0.18" stroke-width="8"/>
+    <path d="M300 900 l260 174" stroke="#fff" stroke-opacity="0.12" stroke-width="6"/>
+    <circle cx="640" cy="800" r="26" fill="#c9a24a" opacity="0.9"/><rect width="1200" height="1500" filter="url(#grain)" opacity="0.35" fill="#8a7c68"/><rect width="1200" height="1500" fill="none" stroke="#000" stroke-opacity="0.06"/></svg>
